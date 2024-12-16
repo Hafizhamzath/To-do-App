@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To-do list app where user can create a task, mark it done , and delete it, This app allows to manage our task efficiently">
+    <meta name="author" content="HAFIZ A H"> 
+    <title>To-Do List App</title>
+   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <!-- Linking of css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>Todo App</h1>
+                <p>Keep it up!</p>
+                <div id="progress_bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0 / 0</p>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="active">Active</button>
+                <button class="filter-button" data-filter="completed">Done</button>
+            </div>
+            
+        </div>
+        <form action="#">
+            <input type="text"  id="taskInput" placeholder="Write your task">
+            <button id="newTask" type="submit">+</button>
+        </form>
+
+        <ul id="task_list"></ul>
+     </div>
+     <!-- Linking of JS File -->
+    <script src="script.js"></script>
+    <!-- Linkin of Confetti cdn for animation -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
